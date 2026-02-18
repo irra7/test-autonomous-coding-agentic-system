@@ -1,0 +1,22 @@
+{
+  "build": {
+    "builder": "DOCKERFILE"
+  },
+  "deploy": {
+    "numReplicas": 1,
+    "restartPolicyType": "ON_FAILURE",
+    "healthcheckPath": "/health",
+    "healthcheckTimeout": 300
+  },
+  "environments": {
+    "preview": {
+      "autoDeployOnPR": true,
+      "autoDeleteOnPRClose": true,
+      "runE2ETests": true
+    },
+    "production": {
+      "autoDeployOnPR": false,
+      "requireApproval": true
+    }
+  }
+}

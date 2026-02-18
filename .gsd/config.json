@@ -1,0 +1,14 @@
+{
+  "model": "claude-sonnet-4-5",
+  "maxTokens": 200000,
+  "skillsAutoLoad": true,
+  "skillsPath": "C:\\Users\\igsal\\.claude\\skills\\user",
+  "execution": {
+    "parallelTasks": 3,
+    "atomicCommits": true,
+    "humanCheckpoints": [
+      "user-story",
+      "final-pr"
+    ]
+  }
+}
